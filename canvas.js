@@ -31,3 +31,14 @@ gradient.addColorStop(0, "red")
 gradient.addColorStop(1, "white")
 ctx2.fillStyle = gradient
 ctx2.fillRect(0, 100, 100, 100)
+
+// text content
+ctx.fillStyle = "black"
+ctx.font =
+	"20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+ctx.fillText("lorem ipsum. На паншині пшеницю жала", 10, 450)
+
+// insert image
+const img = new Image()
+img.src = "https://vgolos.ua/tpl/images/logo-footer.webp"
+ctx.drawImage(img, 10, 500)
