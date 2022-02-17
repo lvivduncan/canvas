@@ -42,3 +42,9 @@ ctx.fillText("lorem ipsum. На паншині пшеницю жала", 10, 450
 const img = new Image()
 img.src = "https://vgolos.ua/tpl/images/logo-footer.webp"
 ctx.drawImage(img, 10, 500)
+
+// line
+ctx.beginPath()
+ctx.moveTo(0, 600)
+ctx.lineTo(300, 600)
+ctx.stroke()
