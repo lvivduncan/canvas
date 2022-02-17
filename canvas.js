@@ -25,13 +25,9 @@ ctx.arc(100, 100, 50, 0, Math.PI * 2)
 ctx.closePath()
 ctx.stroke()
 
-// анімація
-function animate() {
-	ctx.beginPath()
-	ctx.arc(100, 100, 50, 0, Math.PI * 2)
-	ctx.closePath()
-	ctx.stroke()
-	window.requestAnimationFrame(animate)
-}
-
-animate()
+// gradient
+const gradient = ctx.createLinearGradient(0, 100, 100, 100)
+gradient.addColorStop(0, "red")
+gradient.addColorStop(1, "white")
+ctx2.fillStyle = gradient
+ctx2.fillRect(0, 100, 100, 100)
